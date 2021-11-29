@@ -40,11 +40,11 @@ https://www.coolblue.nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Homepage  
-<img src="images/homepagina.jpg" width="375px" alt="De homepagina van coolblue">
+<img src="images/readme/homepagina.jpg" width="375px" alt="De homepagina van coolblue">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Winkelwagen  
-<img src="images/winkelwagen.jpg" width="375px" alt="De winkelwagen pagina die nog leeg is">
+<img src="images/readme/winkelwagen.jpg" width="375px" alt="De winkelwagen pagina die nog leeg is">
  
 </details>
 
@@ -56,10 +56,10 @@ Winkelwagen
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### De hele pagina (Homepage): 
-<img src="images/breakdownschetshome.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/readme/breakdownschetshome.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/catogorieën.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/readme/catogorieën.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 <!-- ### wellicht nog een dynamisch deel (bijv filter): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
@@ -76,17 +76,26 @@ Winkelwagen
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik begin Flexbox steeds meer te snappen. Ik ben zelf door mijn vorige opleiding heel erg gewend om met bootstrap te werken dus het is nog een hele omschakeling naar flexbox maar tot nu toe gaat dat redelijk.
+
+Ik heb bijne mijn eerste pagina af. Ik moet nog de header en de footer goed krijgen.
+
+<img src="images/readme/eersteOpzetWeek2.png" width="375px" alt="Homepage coolblue">
+
+Dit is een stukje code. Dit gaat over section 4. Ik zet eigenlijk bijna alles in UL LI
+<img src="images/readme/codeWeek2.png" width="375px" alt="Homepage coolblue CODE">
+
+
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Anneke Steller  | Aris Rosbach       |  Max van Liempt    |  Fleur Oostingh        | Zoë Reijinga
+| ---             | ---                | ---                | ---                    | ---    
+| Ze wilde aangeven  | Had een probleem   | Geen punten    |Wanneer je het beste een DIV gebruikt| Geen punten
+| dat ze nog wat achterloopt    | met de margins     | nog een punt | dit wil ik zeker |
+| ...                           | ...                | ...          | ...              |...
 
 
 ### Verslag van meeting
