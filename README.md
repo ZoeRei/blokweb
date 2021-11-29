@@ -93,8 +93,8 @@ samen met je groepje opstellen
 
 | Anneke Steller  | Aris Rosbach       |  Max van Liempt    |  Fleur Oostingh        | Zoë Reijinga
 | ---             | ---                | ---                | ---                    | ---    
-| Ze wilde aangeven  | Had een probleem   | Geen punten    |Wanneer je het beste een DIV gebruikt| Geen punten
-| dat ze nog wat achterloopt    | met de margins     | nog een punt | dit wil ik zeker |
+| Ze wilde aangeven dat ze nog wat achterloopt | Had een probleem met de margins  | Geen punten    |Wanneer je het beste een DIV gebruikt| Geen punten
+|     |      |  |  |
 | ...                           | ...                | ...          | ...              |...
 
 
