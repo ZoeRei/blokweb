@@ -99,17 +99,13 @@ samen met je groepje opstellen
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Uitkosmten
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Anneke liep eigenlijk nog niet zo heel ver achter als zij zelf dacht.
+- Fleur had een voorbeeld met allerlei foto's wat ze in een div had gezet. Ze kon dit beter in een list item kunnen zetten,
+
 
 </details>
-
-
-
 
 
 ## Voortgang 2 (week 3)
@@ -118,26 +114,37 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Op dit moment heb ik mijn 2 pagina af. Op een paar kleine details na. Zoals de slider met tekst bonven in de pagina moet nog uitzichzelf slide.
+
+<img src="images/readme/voortgang2_CodeHomepage.png" width="375px" alt="Homepage coolblue CODE">
+<img src="images/readme/voortgang2_CodeDetailPagina.png" width="375px" alt="Detail pagina coolblue CODE">
+
+<img src="images/readme/voortgang2_Homepage.png" width="375px" alt="Homepage">
+<img src="images/readme/voortgang2_DetailPagina.png" width="375px" alt="Detail pagina">
+<img src="images/readme/voortgang2_UitklapMenu.png" width="375px" alt="uitklap menu">
+<img src="images/readme/voortgang2_Slider" width="375px" alt="slider">
+
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Aris Rosbach      | Max van Liempt          | Laurens Duin    | Zoë Reijinga        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Aris wilde graag wat tips voor het gebruiken grid  | Max vroeg zich af hoe hij zijn divjes kon vervangen voor iets anders            | Had geen vragen    | Ik had ook geen vragen    |
+
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+In ons groepje was er niemand die echt vastliep en daardoor ook niet echt specifieke vragen had voor de studentassistentent. Iedereen liet zijn code even zien waardoor de studenassistenten daar wat tips konden geven.
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- We begonnen bij Aris haar code. Aris had de vraag over Grid. Uiteindelijk kwam het erop neer dat ze vooral moest gaan proberen en kijken wat wel en wat niet werkt. Omdat Aris resposive wil maken werd er gezegd dat ze goed moest opletten met de media queries.
+- Daarna ging ik mijn code laten zien. Ze vonden het goed dat ik veel comments had geplaats en ook bij elke sectie een comment geplaats met welke sectie het is zodat ik niet in de war zou raken.
+- Laurens zijn code zag er ook goed uit. Hij had ook veel comments gebruikt in zijn html
+- Max liet ook zijn code zien. Wat de studentassistenten meteen opviel is dat hij heel veel divjes heeft gebruikt. Daardom was zijn vraag ook hoe hij deze kon vervangen. Ze gaven als tips om list items of articles te gebruiken.
+
+
+Het zag er bij iedereen goed uit. We zijn nog goed op schema.
 
 </details>
 
