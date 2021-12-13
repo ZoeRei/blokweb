@@ -260,10 +260,10 @@ Ik twijfel wel steeds of ik wel genoeg had. Omdat ik soms langer bezig was om fl
 <img src="images/readme/code9.png" width="100px" alt="code">
 
 ### Screenshot(s) Uitwerking
-<img src="images/readme/uitwerking1.png" width="100px" alt="uitwerking">
-<img src="images/readme/uitwerking2.png" width="100px" alt="uitwerking">
-<img src="images/readme/uitwerking3.png" width="100px" alt="uitwerking">
-<img src="images/readme/uitwerking4.png" width="100px" alt="uitwerking">
+<img src="images/readme/uitwerking1.png" width="280px" alt="uitwerking">
+<img src="images/readme/uitwerking2.png" width="280px" alt="uitwerking">
+<img src="images/readme/uitwerking3.png" width="280px" alt="uitwerking">
+<img src="images/readme/uitwerking4.png" width="280px" alt="uitwerking">
 
 </details>
 
