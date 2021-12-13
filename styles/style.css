@@ -10,30 +10,81 @@
 }
 
 
-/* ALGEMENE CSS */
+/* Var KLEUREN */
 :root{
-  --Background-color:#0090e3;
-  --productText-color:#285dab;
-  --mainText-color:#0090e3;
   --morgenBezorgd-color:#008500;
+  --buttonHover-color:#0090e3;
   --h2PaddingTop: 1em;
+  --headerSpanColor: #f60;
+  --headerSectionArticle: white;
+  --article-font-Black-color: black;
+  --article-font-Blue-color:#0090e3;
+  --focusColor:#f60;
+  
+  --backgroundColor:white;
+  --BackgroundNav-color:#0090e3;
+  --font-Blue-color:#0090e3;
+  --font-Black-color: black;
+  --productText-color:#285dab;
+  --liTextColorBlack:black;
+  --Border: lightgray;
+  --backgroundColorLi:white;
+  --backgroundButton: white;
+  --dividerColor:#ddd;
+  --backgroundColorUitverkocht: #e5f6ff;
 }
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --backgroundColor:#13171c;
+    --BackgroundNav-color:#13171c;
+    --font-Blue-color:white;
+    --font-Black-color: white;
+    --productText-color:white;
+    --liTextColorBlack: white;
+    --Border: rgb(73, 73, 73);
+    --backgroundColorLi:#1f2225;
+    --backgroundButton: #1f2225;
+    --dividerColor: #1f2225;
+    --backgroundColorUitverkocht: #555c5f;
+  }
+}
+
+/* Algemeen */
+body{
+  background-color: var(--backgroundColor);
+} 
 
 main{
   font-family: 'Open Sans', sans-serif;
 }
+
+
 h2{
   font-size: 1.2em;
 }
 
 p, a {
-  color: black;
+  color: var(--font-Black-color);
 }
 
 hr.divider{
-  border-top: 0.1px solid #ddd;
+  background-color: var(--dividerColor);
+  border-top: 0.1px solid var(--dividerColor);
   margin-top: 1em;
 }
+
+
+/* STATES */
+/* Focus state */
+:focus{
+  outline: none;
+}
+
+:focus-visible{
+  outline: 4px dashed var(--focusColor);
+}
+
 
 
 
@@ -42,7 +93,7 @@ hr.divider{
 /***********/
 nav{
   display: flex;
-  background-color:var(--Background-color);
+  background-color:var(--BackgroundNav-color);
 }
 
 nav button{
@@ -93,9 +144,10 @@ nav .navIcon{
   width: 30px;
 }
 
+
 /* Uitklap menu styling */
 nav aside{
-  background-color: white;
+  background-color: var(--backgroundColor);
   position: absolute;
   right: 0;
   top: 0;
@@ -119,7 +171,7 @@ nav aside ul li{
 }
 
 nav aside ul li a{
-  color: black;
+  color: var(--font-Black-color);
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   line-height: 3em;
@@ -146,23 +198,96 @@ nav.transitie_navigatie button span:last-of-type{
 }
 
 
-header section:first-of-type p {
+/*********************************/
+/* tekst animeren scrolling  */
+/*********************************/
+.scrolling{
+  overflow: hidden;
+  max-height: 26px;
+}
+
+.scrolling ul{
+display: flex;
+list-style: none;
+width: max-content;
+}
+
+
+.scrolling ul li {
   font-family: 'Open Sans', sans-serif;
-  min-height: 50px;
+  max-height: 26px;
+  color: var(--liTextColorBlack);
+  /* width: -content; */
+  transform: translateX(100vW);
+  animation: scrolling 20s linear infinite;
+  font-size: 1em;
+
 }
-header section:first-of-type p span{
-  color: #f60;
+
+/* zorgt ervoor dat sommige woorden oranje zijn */
+.scrolling span{
+  color: var(--headerSpanColor);
   font-weight: 700;
+} 
+
+@keyframes scrolling {
+	0% {
+		transform: translateX(100%);
+	}
+  /* 50%{
+    transform: translateX(50%);
+  } */
+	100% {
+		transform: translateX(-100%);
+	}
 }
+
+
+
+
+
 
 /*********************************/
 /* section 1 met header foto */
 /*********************************/
 
+main section:nth-of-type(1) article{
+  position: absolute;
+  border: none;
+  width: 56%;
+  background-color: var(--headerSectionArticle);
+  padding: 0.5em;
+  top: 8em;
+  right: 9em;
+}
+
+main section:nth-of-type(1) article h2{
+  color: var(--article-font-Blue-color);
+}
+
+main section:nth-of-type(1) article h2 span{
+  color:var(--headerSpanColor);
+}
+
+main section:nth-of-type(1) article p{
+  font-size: 0.8em;
+  color: var(--article-font-Black-color);
+}
+
+main section:nth-of-type(1) article a{
+  font-size: 0.8em;
+  color: var(--article-font-Blue-color);
+}
+
+ main section:nth-of-type(1) img:first-of-type article:hover{
+  transform: scale(1.5);
+  transition: .2s;
+} 
+
 main section:nth-of-type(1) img{
   width: 100%;
   border-radius: 5px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--Border);
 }
 
 /*********************************/
@@ -178,9 +303,12 @@ main section:nth-of-type(2){
 main section:nth-of-type(2) img{
   width: 90%;
   border-radius: 5px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--Border);
 }
 
+main section:nth-of-type(2) img:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} 
 
 /*********************************/
 /* section 3 */
@@ -188,6 +316,7 @@ main section:nth-of-type(2) img{
 main section:nth-of-type(3) h2{
   padding-left: 1em;
   padding-top: var(--h2PaddingTop);
+  color: var(--font-Black-color);
 }
 
 main section:nth-of-type(3) ul{
@@ -200,36 +329,60 @@ main section:nth-of-type(3) ul{
 }
 
 main section:nth-of-type(3) ul li{
-  border:1px solid lightgray;
+  border:1px solid var(--Border);
   border-radius: 5px;
   width: calc(50% - 1em);
   text-align: center;
   padding: 0.5em;
   list-style-type: none;
+  background-color: var(--backgroundColorLi);
 }
 
-main section:nth-of-type(3) ul h3{
-  color:var(--mainText-color);
+main section:nth-of-type(3) ul li img{
+  width: 100%;
+
+}
+
+main section:nth-of-type(3) ul li h3{
+  text-align: center;
+  justify-content: center;
+  color:var(--font-Blue-color);
   font-size: 0.8em;
 }
 
-main section:nth-of-type(3) ul img{
-  width: 100%;
-  background-color: #F2F7FC;
-}
-
+/* bekijk het hele assoirtiment */
 main section:nth-of-type(3) a{
-  color: #0090e3;
   text-decoration: none;
   padding-left: 1em;
+  color: var(--font-Blue-color);
 }
 
+/* states */
+main section:nth-of-type(3) ul li:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+main section:nth-of-type(3) ul li:active{
+  transform: translateY(4px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+main section:nth-of-type(3) h3:focus{
+  outline: none;
+}
+
+main section:nth-of-type(3) h3:focus-visible{
+  outline: 4px dashed var(--focusColor);
+}
 /*********************************/
 /* section 4*/
 /*********************************/
 main section:nth-of-type(4) h2{
   padding-left: 1em;
   padding-top: 1em;
+  color: var(--font-Black-color);
   padding-top: var(--h2PaddingTop);
 }
 
@@ -246,12 +399,13 @@ main section:nth-of-type(4) ul li{
   min-width: 45%;
 }
 
+
 main section:nth-of-type(4) ul li img{
   width: 70%;
 }
 
 main section:nth-of-type(4) h3{
-  color: var(--mainText-color);
+  color: var(--font-Blue-color);
   min-height: 23%;
   font-size: 0.9em;
 }
@@ -266,13 +420,23 @@ main section:nth-of-type(4)  p span{
   font-size: 0.9em;
 }
 
+/* states */
+main section:nth-of-type(4) ul li:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+main section:nth-of-type(4) ul li:active{
+  transform: translateY(4px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 /*********************************/
 /* section 5*/
 /*********************************/
 
 main section:nth-of-type(5) ul{
   padding: 1em 0 ;
-  background-color: var(--Background-color);
+  background-color: var(--BackgroundNav-color);
 }
 
 main section:nth-of-type(5) ul li {
@@ -284,9 +448,35 @@ main section:nth-of-type(5) ul li {
   position: relative;
 }
 
+main section:nth-of-type(5) ul li {
+  color: white;
+  text-decoration: none;
+}
+
 main section:nth-of-type(5) ul li a{
   color: white;
   text-decoration: none;
+}
+
+main section:nth-of-type(5) ul li a:hover{
+  color: white;
+}
+
+main section:nth-of-type(5) ul li a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+main section:nth-of-type(5) ul li a:hover::before {
+  transform: scaleX(1);
 }
 
 main section:nth-of-type(5) ul li img{
@@ -301,7 +491,7 @@ main section:nth-of-type(5) ul li img{
 /*********************************/
 
 main section:nth-of-type(6){
-  background-color: var(--Background-color);
+  background-color: var(--BackgroundNav-color);
   display: flex;
   padding: 0 1em 0 1em;
   
@@ -334,7 +524,7 @@ main section:nth-of-type(8) {
 
 main section:nth-of-type(8) a{
   text-decoration: none;
-  color: var(--mainText-color);
+  color: var(--font-Blue-color);
 }
 
 /*********************************/
@@ -360,7 +550,7 @@ main section:nth-of-type(9) a {
 /*********************************/
 
 main.detail{
-  background-color: white;
+  background-color: var(--backgroundColor);
 
 }
 /*********************************/
@@ -373,7 +563,7 @@ main.detail section:nth-of-type(1){
 }
 
 main.detail section:nth-of-type(1) a{
-  color: var(--mainText-color);
+  color: var(--font-Blue-color);
   font-size: 0.8em;
   text-decoration: none;
 }
@@ -398,9 +588,11 @@ main.detail section:nth-of-type(1) img{
 }
 
 main.detail section:nth-of-type(1) p{
-  color:var(--mainText-color);
+  color:var(--font-Blue-color);
   font-size: 0.7em;
 }
+
+/* Product naam  animatie */
 
 
 /*********************************/
@@ -413,16 +605,42 @@ main.detail section:nth-of-type(2){
   padding-top: 1em;
   position: relative;
 }
+
+/* Coolblue beste keuze img */
 main.detail section:nth-of-type(2) img:first-of-type{
   position: absolute;
   border: none;
   width: 30%;
   right: 14.2em;
-
 }
+
+main.detail section:nth-of-type(2) img:first-of-type:hover{
+  transform: scale(1.5);
+  transition: .2s;
+}
+
+/* Coolblue product foto*/
 main.detail section:nth-of-type(2) img:last-of-type{
   border: none;
   width: 50%;
+}
+
+@keyframes productAnimation {
+  0% {
+    
+  }
+  50%{
+    transform: rotate(180deg)
+  }
+  100% {
+    transform: rotate(360deg)
+    
+  }
+}
+
+main.detail section:nth-of-type(2) img.rotateProduct:hover{
+  animation-name: productAnimation;
+  animation-duration: 1s;
 }
 
 
@@ -451,7 +669,7 @@ main.detail section:nth-of-type(4){
   margin-right: 1em;
   border: 1px solid #0090e3;
   border-radius: 0.3em;
-  background-color: #e5f6ff;
+  background-color: var(--backgroundColorUitverkocht);
   padding-bottom: 1em;
 }
 
@@ -460,7 +678,7 @@ main.detail section:nth-of-type(4) p {
 }
 
 main.detail section:nth-of-type(4) a {
-  color: var(--mainText-color);
+  color: var(--font-Blue-color);
   padding: 0.8em;
   padding-bottom: 1em;
 }
@@ -474,7 +692,7 @@ main.detail section:nth-of-type(5){
 }
 
 main.detail section:nth-of-type(5) p span{
-  color: var(--mainText-color);
+  color: var(--font-Blue-color);
   font-size: 0.8em;
 }
 main.detail section:nth-of-type(5) p:first-of-type{
@@ -494,21 +712,63 @@ main.detail section:nth-of-type(5) p:last-of-type span{
 /* Detail section 6*/
 /*********************************/
 main.detail section:nth-of-type(6){
-  background-color: white;
+  background-color: var(--backgroundColor);
 } 
-
+ 
 main.detail section:nth-of-type(6) button{
   width: 100%;
   height: 100%;
-  background-color: white;
-  /* margin: 0.6em; */
+  border: none;
+
+} 
+
+main.detail section:nth-of-type(6) button a{
+  font-family: 'Open Sans', sans-serif;
+  transition: all .35s;
+  display: block;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  background-color: var(--backgroundButton);
   border: 1px solid lightgray;
   border-radius: 5px;
   box-shadow: 0 4px 6px -6px #777;
-
   padding: 1em;
-  font-size: 0.9em;
-  color: var(--mainText-color);
+  font-size: 1em;
+  color: var(--font-Blue-color);
+  
+}
+
+main.detail section:nth-of-type(6) button a span{
+  position: relative;
+  z-index: 2;
+}
+
+main.detail section:nth-of-type(6) button a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--buttonHover-color);
+  transition: all .35s;
+}
+
+main.detail section:nth-of-type(6) button a:hover{
+  color: #fff;
+}
+
+main.detail section:nth-of-type(6) button a:hover:after{
+  width: 100%;
+}
+main.detail section:nth-of-type(6) button:focus{
+  outline: none;
+}
+
+main.detail section:nth-of-type(6) button:focus-visible{
+  outline: 4px dashed var(--focusColor);
 }
 
 /*********************************/
@@ -516,18 +776,20 @@ main.detail section:nth-of-type(6) button{
 /*********************************/ 
 main.detail section:nth-of-type(7){
   margin-left: 1em;
-  background-color: white;
+  background-color: var(--backgroundColor);
   display: flexbox;
   flex-wrap: wrap;
 }
 
 main.detail section:nth-of-type(7) h2{
   padding-top: var(--h2PaddingTop);
+  color: var(--font-Black-color);
 }
 
 main.detail section:nth-of-type(7) td{
   font-size: 0.9em;
   line-height: 2.4em;
+  color: var(--font-Black-color);
 }
 main.detail section:nth-of-type(7) td span{
   color: grey;
@@ -537,7 +799,7 @@ main.detail section:nth-of-type(7) td span{
 
 main.detail section:nth-of-type(7) a {
   margin-top: 3em;
-  color: var(--mainText-color);
+  color: var(--font-Blue-color);
   font-size: 0.9em;
   text-decoration: none;
 }
@@ -561,6 +823,7 @@ main.detail section:nth-of-type(8) {
 main.detail section:nth-of-type(8) h2{
   padding-top: var(--h2PaddingTop);
   padding-bottom: 0.5em;
+  color: var(--font-Black-color);
 }
 
 main.detail section:nth-of-type(8) p img{
@@ -569,13 +832,13 @@ main.detail section:nth-of-type(8) p img{
 
 main.detail section:nth-of-type(8) p {
   padding-left: 0.1em;
-  color: black;
+  color: var(--font-Black-color);
   padding-bottom: 0.4em;
 }
 
 main.detail section:nth-of-type(8) a {
   margin-top: 0.5em;
-  color: var(--mainText-color);
+  color: var(--font-Blue-color);
   font-size: 0.9em;
   text-decoration: none;
 }
@@ -586,8 +849,6 @@ main.detail section:nth-of-type(8) a img{
 }
 
 
-
-
 /*********************************/
 /* Detail section 9*/
 /*********************************/ 
@@ -595,6 +856,7 @@ main.detail section:nth-of-type(9) h2{
   padding-left: 1em;
   padding-top: var(--h2PaddingTop);
   text-align: left;
+  color: var(--font-Black-color);
 }
 
 main.detail section:nth-of-type(9) ul{
@@ -606,7 +868,8 @@ main.detail section:nth-of-type(9) ul{
 }
 
 main.detail section:nth-of-type(9) ul li{
-  border: 1px solid lightgray;
+  border: 1px solid var(--Border);
+  background-color: var(--backgroundColorLi);
     border-radius: 5px;
     /* width: calc(50% - 1em); */
     /* text-align: center; */
@@ -620,12 +883,14 @@ main.detail section:nth-of-type(9) ul li img{
 }
 
 main.detail section:nth-of-type(9) h3{
-  color: var(--mainText-color);
+  color: var(--font-Blue-color);
   min-height: 20%;
   font-size: 0.9em;
 }
 
-
+main.detail section:nth-of-type(9) ul li:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 /*********************************/
 /* section 10*/
 /*********************************/
@@ -633,6 +898,7 @@ main.detail section:nth-of-type(10) h2{
   padding-left: 1em;
   padding-top: 1em;
   padding-top: var(--h2PaddingTop);
+  color: var(--font-Black-color);
 }
 
 main.detail section:nth-of-type(10) ul{
@@ -648,12 +914,16 @@ main.detail section:nth-of-type(10) ul li{
   min-width: 45%;
 }
 
+main.detail section:nth-of-type(10) ul li:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 main.detail section:nth-of-type(10) ul li img{
   width: 70%;
 }
 
 main.detail section:nth-of-type(10) h3{
-  color: var(--mainText-color);
+  color: var(--font-Blue-color);
   min-height: 23%;
   font-size: 0.9em;
 }
@@ -675,7 +945,7 @@ main.detail section:nth-of-type(10)  p span{
 
 main.detail section:nth-of-type(11) ul{
   padding: 1em 0 ;
-  background-color: var(--Background-color);
+  background-color: var(--BackgroundNav-color);
 }
 
 main.detail section:nth-of-type(11) ul li {
@@ -698,13 +968,33 @@ main.detail section:nth-of-type(11) ul li img{
   right: 1em;
 }
 
+main.detail section:nth-of-type(11) ul li a:hover{
+  color: white;
+}
+
+main.detail section:nth-of-type(11) ul li a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+main.detail section:nth-of-type(11) ul li a:hover::before {
+  transform: scaleX(1);
+}
 
 /*********************************/
 /* Detail section 12*/
 /*********************************/ 
 
 main.detail section:nth-of-type(12){
-  background-color: var(--Background-color);
+  background-color: var(--BackgroundNav-color);
   display: flex;
   padding: 0 1em 0 1em;
   
@@ -737,7 +1027,7 @@ main.detail section:nth-of-type(14) {
 
 main.detail section:nth-of-type(14) a{
   text-decoration: none;
-  color: var(--mainText-color);
+  color: var(--font-Blue-color);
 }
 
 /*********************************/

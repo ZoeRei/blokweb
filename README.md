@@ -157,31 +157,38 @@ Het zag er bij iedereen goed uit. We zijn nog goed op schema.
 <details>
 <summary>uitwerken na test in 8e voortgang</summary>
 
-### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+### Screenreader
+Het duurde even voor ik het door had hoet het allemaal werkte. In het beging zag ik ook geen tabs en opeens kwam hij bij de het logo. Ik kwam er achter dat de tabs eerst door mijn uitklap menu ging die niet zichtbaar is als je er nog niet op hebt geklikt. Gebruik je screenreader dan zal hij deze even goed eerst laten zien.
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+Sommige dingen werden ook overgeslagen. Bij het kopje laatst bekeken slecteerde hij de eerste img maar niet de tweede derde en vierde. Dit kwam door dat dit niet in een link stond. Dit heb ik aangepast dat ze allemaal een link hebben en dat ze dus nu allemaal kan selecteren met tab.
+Op internet vonden Sofie en ik een lijst met shortcuts om bepaalde dingen ook te laten voorlezen. Zoals command+ctrl+H dan leest hij de headers vooor.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Visuele beperkingen
+Gele bril color #0779p 
+<img src="images/readme/gelebril.jpg" width="375px" alt="Gele bril">
+Sofie ging met de gele bril mijn website testen. Ze vond dat er geen erge kleur contrast was en dat ze alles goed kon lezen.
 
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Blure/Glare bril 
+<img src="images/readme/blureGlareBril.jpg" width="375px" alt="Blure/ Glare bril">
+<img src="images/readme/blureGlareBrilSofie.jpg" width="375px" alt="Blure/ Glare bril">
+Sofie ging hier ook de bril testen. De teksten worden grijs
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Concentratieproblemen 
+Sofie ging de balloon hoog houden en ondertussen de website gebruiken 
+<img src="images/readme/balloonSofie.jpg" width="375px" alt="Sofie met de ballon">
+De standaard focus state kon ze wel lezen. Scrollen ging ook wel prima.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+
+#### Spasmes/parkinson. 
+Met dit apparaat ging sofie ook nog mijn website testen.
+<img src="images/readme/spasmesApparaat.jpg" width="375px" alt="Apparaat voor spasmes">
+Bij sofie ging alles opzich wel prima. Het scrollen door de producten ging ook goed.
+<img src="images/readme/spasmesApparaatSofie.jpg" width="375px" alt="Apparaat voor spasmes sofie">
+
+
+#### Oplossingen 
+Waar ik voor wil zorgen is dat mijn focus state goed duidelijk is.
 
 </details>
 
@@ -201,20 +208,23 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Max van Liempt      | Laurens Duin          | Aris Rosbach    | Zoë Reijinga        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Geen punten  | Geen punten          | Geen punten   | Geen punten     |
 | ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+We gingen er heel snel doorheen omdat niemand echt specifieke vragen had. We zijn allemaal ver zodat we alleen nog maar de puntjes op de i hoeven te zetten. Tijdens het gesprek liet iedereen weer even zien hoever iedereen was zodat daar nog feedback op gegeven kon worden.
 
-- punt 1
-- punt 2
+- Als eerst liet Laurens zijn website zien. Deze zag er al goed uit! Hij was bezig om zijn tweede pagina af te maken. Hij vroeg zich alleen nog af of hij niet in vergelijking met de echte website te veel had weggelaten. Maar dat was gelukkig niet het geval omdat Laurens genoeg heft om te kunnen laten zien
+- Als tweede was Aris aan de beurt. Bij Aris zag het er ook al echt goed uit. Ze had het erover dat ze nu bezig is met de puntjes op de i te zetten.
 - nog een punt
-- ...
+- Daarna liet ik mijn werk zien. Ik was ook goed bezig. Ik had nog wel een vraag over de header. Coolblue gebruikt daar gewoon een img terwijl dat ook anders kan. Ik had dat gewoon overgenomen. Mijn vraag was of ik dat ook zo mocht laten. Maar voor mij zou het een uitdaging zijn als ik dat wel anders zou doen.
+- Als laatste was Max. Bij Max zag alles er ook goed uit. Hij gaat nu vooral bezig zijn met de hover, focus en active state want hij had deze nog niet toegepast.
+
+
+Na het gesprek begon ik echt even te twijfelen of ik wel genoeg had, maar dat weet ik pas als ik alles af heb en na mijn gesprek. Dus ik ga gewoon door waarmee ik bezig was en dan gaan we het zien
 
 </details>
 
@@ -228,11 +238,32 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb echt in het begin en nu soms ook nog een beetje moeite om van het bootstrap af te stappen. Het is uiteindelijk redelijk goed gelukt allemaal. Na een tijdje had ik het ook een beetje door dus toen werd het voor mij ook steeds leuker om flexbox te gebruiken. JavaScript blijf ik lastig vinden. Hierdoor heb ik niet fanatiek in JavaScript gewerkt maar het minimale wat erin moest. 
 
-### Screenshot(s)
+Maar over het algemeen heb ik onzettend veel geleerd en vond ik het ook eigenlijk best leuk om met flexbox te werken. Ook vooral wat je allemaal met CSS kan. Ik dacht dat heel veel dingen alleen via JavaScipt moest zoals animatie maar dat kan gewoon met CSS dat vond ik echt heel leuk.
 
-hier screenshot(s) van je eindresultaat
+Ik vond het werken met :root ook interessant. Voor de volgende keer weet ik wel dat ik dat echt goed moet bij houden en ook goede duidelijke namen. Toen ik begon met darkmode liep ik daar nog wel eens tegen aan omdat ik soms bij bepaalde stukjes geen var had gebruik maar gewoon color:white;
+en dat moest ik dan weer aanpassen dat het wel in de root zit. Dus dat is een tip aan mijzelf voor de volgende keer.
+
+Ik twijfel wel steeds of ik wel genoeg had. Omdat ik soms langer bezig was om flexbox goed te begrijpen om bootstrap af te leren maar ik heb mijn best gedaan. Ik vind dat de coolblue website best wel overeen komt! En dan vooral coolblue heeft in de header een foto met een blok tekst en de maar dat is gewoon één grote foto die linkt. Dit had ik zelf ook eerst gedaan maar toch is het mij gelukt om dat apart van elkaar te krijgen.
+
+
+### Screenshot(s) code
+<img src="images/readme/code1.png" width="100px" alt="code">
+<img src="images/readme/code2.png" width="100px" alt="code">
+<img src="images/readme/code3.png" width="100px" alt="code">
+<img src="images/readme/code4.png" width="100px" alt="code">
+<img src="images/readme/code5.png" width="100px" alt="code">
+<img src="images/readme/code6.png" width="100px" alt="code">
+<img src="images/readme/code7.png" width="100px" alt="code">
+<img src="images/readme/code8.png" width="100px" alt="code">
+<img src="images/readme/code9.png" width="100px" alt="code">
+
+### Screenshot(s) Uitwerking
+<img src="images/readme/uitwerking1.png" width="100px" alt="uitwerking">
+<img src="images/readme/uitwerking2.png" width="100px" alt="uitwerking">
+<img src="images/readme/uitwerking3.png" width="100px" alt="uitwerking">
+<img src="images/readme/uitwerking4.png" width="100px" alt="uitwerking">
 
 </details>
 
@@ -247,8 +278,8 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. (flexBox)https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+2. (text scrol animatie) https://www.youtube.com/watch?v=yCyD5AZegLk
+3. (Hover, active Button) https://dev.to/webdeasy/top-20-css-buttons-animations-f41
 
 </details>
